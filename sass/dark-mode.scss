@@ -1,0 +1,279 @@
+// Colors
+$primary-base: #568eb0;
+$primary-lighten1: #6a9ab9;
+$primary-lighten2: #7ea6c1;
+$primary-lighten3: #90b2ca;
+$primary-lighten4: #a3bfd3;
+$primary-lighten5: #b5cbdb;
+
+$surface-base: #1c1c1c;
+$surface-lighten1: #313131;
+$surface-lighten2: #474747;
+$surface-lighten3: #5f5f5f;
+$surface-lighten4: #777777;
+$surface-lighten5: #919191;
+
+$border-color-darken: $surface-lighten3;
+$border-color: $surface-lighten4;
+$border-color-lighten: $surface-lighten5;
+
+$font-color: #f1f1f1;
+$link-color: $primary-lighten1;
+$link-color-secondary: #5FC660;
+
+// Styles
+
+// Text and fonts
+a:active, a:link, a:visited {
+    color: $link-color !important;
+}
+
+#stream .object .body .reference .bd {
+    .by,  .created-by,  .created-on,  .ref-type a,  .via {
+        color: $font-color !important;
+    }
+
+    .space {
+        color: $link-color-secondary !important;
+    }
+}
+
+#stream .object .body ul.activities li a {
+    color: $font-color !important;
+}
+
+.header-title {
+    color: $font-color !important;
+
+    >a:active,
+    >a:link,
+    >a:visited {
+        color: $font-color !important;
+    }
+}
+
+.header-sub-title {
+    color: $font-color !important;
+
+    >a:active,
+    >a:link,
+    >a:visited, {
+        color: $font-color !important;
+    }
+}
+
+.sub-navigation .tabs ul {
+    li h5 {
+        color: $font-color !important;
+
+        >a:active,
+        >a:link,
+        >a:visited {
+            color: $font-color !important;
+        }
+    }
+}
+
+// Page Content
+html, body {
+    background-color: $surface-base !important;
+}
+
+// Header
+#header-global {
+    .PodioUI__Notifications {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+
+        .PodioUI__Notifications__list {
+            a.PodioUI__Notifications__NotificationGroup:hover {
+                background-color: $surface-lighten3 !important;
+            }
+        }
+
+        div {
+            color: $font-color !important;
+        }
+
+        >div:last-child {
+            background-color: $surface-lighten3 !important;
+        }
+    }
+}
+
+// Subnav
+.secondary-header.subnav {
+    #space-navigation {
+        border-bottom: none !important;
+
+        ul.app-nav li.active .title {
+            color: $font-color !important;
+        }
+    }
+}
+
+// Dashboard Main
+.main-content {
+    border-color: $border-color !important;
+    color: $font-color !important;
+
+    #home_stream, #space_stream, #stream,
+    .promotion-banner .wrapper .text,
+    .grid-tile {
+        background-color: $surface-lighten1 !important;
+    }
+
+    #stream_composer,
+    #stream .object {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+    }
+
+    #stream .show-more {
+        background-color: $surface-lighten2 !important;
+        border-color: $border-color-darken !important;
+    }
+
+    .gridster-block {
+        background-color: $surface-lighten1 !important;
+
+        ul.content li .inner {
+            border-color: $border-color !important;
+        }
+    }
+
+    .gridster-widget {
+        background-color: $surface-lighten1 !important;
+
+        .header .actions {
+            background-image: none !important;
+        }
+
+        .header h5,
+        .no-footer {
+            background-color: $surface-lighten1 !important;
+        }
+
+        .footer {
+            background-color: $surface-lighten1 !important;
+            border-bottom-color: $surface-lighten1 !important;
+        }
+    }
+
+    // Add widget button
+    .addWidget-wrapper .addWidget {
+        // The button border
+        background-color: $surface-lighten1 !important;
+
+        &:hover {
+            background-color: $surface-lighten2 !important;
+        }
+
+        .add-widget-wrapper {
+            background-color: $surface-base !important;
+
+            .centered {
+                color: $font-color !important;
+            }
+        }
+    }
+
+    // Text fields
+    #stream_composer form textarea {
+        color: $font-color !important;
+    }
+
+    .comment-box {
+        background-color: $surface-lighten2 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+
+        textarea, .add-comment, .mentions-input-box {
+            background-color: $surface-lighten1 !important;
+            border-color: $border-color !important;
+            color: $font-color !important;
+        }
+
+        .add-comment:hover {
+            border-color: $border-color-lighten !important;
+        }
+    }
+
+    .comment-box.realtime-layout {
+        .comment, .show-all-comments {
+            border-color: $border-color !important;
+        }
+    }
+
+    // Buttons & Inputs
+
+    // Icons
+    .sprite-icon {
+        filter: brightness(150%) !important;
+    }
+
+    // Tables
+    .table {
+        background-color: $surface-lighten1 !important;
+        border-color: $surface-lighten3 !important;
+    }
+
+    .items-table table tr.odd > td {
+        background-color: $surface-lighten4 !important;
+
+    }
+
+    .items-table table tr.even > td {
+        background-color: $surface-lighten3 !important;
+    }
+
+    // Other
+    #home_stream .stream-unread-badge,
+    #space_stream .stream-unread-badge {
+        background-color: $surface-lighten3 !important;
+        border-color: $border-color-lighten !important;
+    }
+}
+
+// App View
+.app-view {
+    .app-view__sidebar > .app-sidebar-new {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+
+        .app-sidebar-new__current-views {
+            color: $font-color !important;
+        }
+    }
+
+    .app-view__content {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+
+        main.items-list {
+            background-color: $surface-lighten1 !important;
+
+            .items-table table {
+                background-color: $surface-lighten1 !important;
+                border-color: $border-color !important;
+
+                thead tr th,
+                thead tr th.retina {
+                    background-color: $surface-lighten1 !important;
+                    border-color: $border-color !important;
+                }
+
+                tr.odd > td {
+                    background-color: $surface-lighten2 !important;
+                }
+
+                tr.even > td {
+                     background-color: $surface-lighten1 !important;
+                 }
+            }
+        }
+    }
+}

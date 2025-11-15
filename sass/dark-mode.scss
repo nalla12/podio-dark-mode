@@ -1,4 +1,4 @@
-// Colors
+// Colors https://colorffy.com/light-theme-generator
 $primary-base: #568eb0;
 $primary-lighten1: #6a9ab9;
 $primary-lighten2: #7ea6c1;
@@ -275,5 +275,82 @@ html, body {
                  }
             }
         }
+    }
+}
+
+// App item
+.content-overlay.background {
+    background-color: $surface-base !important;
+}
+
+.item-topbar {
+    background-color: $surface-lighten1 !important;
+    border-color: $border-color !important;
+    color: $font-color !important;
+}
+
+section.item-content {
+    ul:not(.help-text-trigger) > li,
+    ul.help-text-trigger > li:not(.selected):not(:hover),
+    ul > li > .frame-wrapper > .frame-label,
+    .field-label,
+    .placeholder-row,
+    .metadata-row {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+
+    ul > li:not(.category-field):not(.calculation-field):not(.image-field):not(.separator-field).can-update {
+        .frame-content {
+            .value.view-mode:hover {
+                &, .contact-card.user:hover {
+                    background-color: $surface-lighten2 !important;
+                }
+            }
+
+            .value.no-hover-effect:hover {
+                background-color: inherit !important;
+                cursor: default !important;
+            }
+        }
+    }
+}
+
+// Activity and comments sidebar
+.items-section .item-activity {
+    &, .activity-header,
+    .composer-new {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+
+    .form-embed-actions .action-box {
+        border-color: $border-color !important;
+
+        .podio-uploader-box .button-wrapper {
+            background-color: $surface-lighten1 !important;
+            border-color: $surface-lighten2 !important;
+            color: $font-color !important;
+
+            .button-new.secondary {
+                background-color: $surface-lighten2 !important;
+            }
+
+            .files-drag-tip {
+                background-color: $surface-lighten1 !important;
+            }
+        }
+
+        .arrow-border {
+            border-top-color: $border-color !important;
+        }
+    }
+
+    .composer-new textarea {
+        background-color: $surface-base !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
     }
 }

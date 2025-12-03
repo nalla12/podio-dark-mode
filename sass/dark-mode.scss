@@ -112,6 +112,32 @@ form label {
     }
 }
 
+.form-embed-actions .action-box {
+    &, input {
+        background-color: $surface-lighten2 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+
+    .podio-uploader-box .button-wrapper {
+        background-color: $surface-lighten2 !important;
+        border-color: $surface-lighten3 !important;
+        color: $font-color !important;
+
+        .button-new.secondary {
+            background-color: $surface-lighten3 !important;
+        }
+
+        .files-drag-tip {
+            background-color: $surface-lighten2 !important;
+        }
+    }
+
+    .arrow-border {
+        border-top-color: $border-color !important;
+    }
+}
+
 // Buttons
 .button-new.primary {
     color: $font-color !important;
@@ -468,28 +494,6 @@ html, body {
         }
     }
 
-    .form-embed-actions .action-box {
-        border-color: $border-color !important;
-
-        .podio-uploader-box .button-wrapper {
-            background-color: $surface-lighten1 !important;
-            border-color: $surface-lighten2 !important;
-            color: $font-color !important;
-
-            .button-new.secondary {
-                background-color: $surface-lighten2 !important;
-            }
-
-            .files-drag-tip {
-                background-color: $surface-lighten1 !important;
-            }
-        }
-
-        .arrow-border {
-            border-top-color: $border-color !important;
-        }
-    }
-
     .activity-group-wrapper .pagination-nav {
         background-color: $surface-lighten2 !important ;
         color: $font-color !important;
@@ -610,4 +614,75 @@ body.notifications {
 
 .account-settings .settings-box div.mail .status-verified {
     color: #171717 !important;
+}
+
+// Chat pane
+.right-nav.chat-pane {
+    &, input {
+        background: $surface-lighten2 !important;
+        border-color: $border-color !important;
+    }
+
+    .chat-main-wrapper {
+        header.chat-details {
+            border-bottom-color: $border-color !important;
+        }
+
+        #chat-people-container {
+            .people-list {
+                background: $surface-lighten2 !important;
+                border-color: $border-color !important;
+
+                li > .inner-item {
+                    border-bottom-color: $border-color !important;
+                }
+            }
+
+            .new-conversation > .inner-item {
+                border-bottom-color: $border-color !important;
+            }
+
+            .people-list li:hover,
+            .new-conversation:hover {
+                background: $surface-lighten3 !important;
+            }
+        }
+
+        .column.navigation {
+            background: $surface-lighten1 !important;
+            border-color: $border-color !important;
+        }
+
+        .show-conversation-container {
+            &, .events-container {
+                background: $surface-lighten2 !important;
+                border-color: $border-color !important;
+            }
+
+            .events-container ul.events > li > div {
+                border-left: 5px solid transparent;
+
+                &.divider {
+                    border-top-color: $border-color !important;
+
+                    .divider-text {
+                        background: $surface-lighten2 !important;
+                    }
+                }
+            }
+
+            .details .subject {
+                border-bottom-color: $border-color !important;
+            }
+
+            .composer-new .mentions-input-box {
+                background: $surface-lighten2 !important;
+
+                textarea {
+                    border-color: $border-color !important;
+                    color: $font-color !important;
+                }
+            }
+        }
+    }
 }

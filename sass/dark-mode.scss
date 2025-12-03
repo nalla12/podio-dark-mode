@@ -24,6 +24,10 @@ $link-color-secondary: #5FC660;
 // Styles
 
 // Text and fonts
+h1, h2, h3, h4, h5, p {
+    color: $font-color !important;
+}
+
 a:active, a:link, a:visited {
     color: $link-color !important;
 }
@@ -79,6 +83,14 @@ ul.token-input-list {
     background: $surface-lighten1 !important;
 }
 
+// Forms
+form label {
+    &, em,
+    &, strong {
+        color: $font-color !important;
+    }
+}
+
 // File uploader dialog
 .file-finder .content {
     &, .file-finder-content > .navigation ul.tabs li.selected,
@@ -98,6 +110,11 @@ ul.token-input-list {
         border-color: $border-color !important;
         color: $font-color !important;
     }
+}
+
+// Buttons
+.button-new.primary {
+    color: $font-color !important;
 }
 
 // Page Content
@@ -521,4 +538,76 @@ html, body {
             }
         }
     }
+}
+
+// Notifications Page
+body.notifications {
+    .notification-content {
+        .list {
+            .top {
+                background: $surface-lighten2 !important;
+                border-color: $border-color !important;
+            }
+            .blank-slate {
+                border-color: $border-color !important;
+            }
+
+            ul.list > li.group {
+                border-color: $border-color !important;
+
+                li.notification .inner .right {
+                    .info .summary {
+                        &, strong {
+                            color: $font-color !important;
+                        }
+                    }
+                }
+
+                &:hover,
+                &.expanded {
+                    background-color: $surface-lighten2 !important;
+                    border-color: $border-color !important;
+
+                    li.notification.bundled {
+                        border-color: $border-color !important;
+                    }
+
+                    li.notification .inner .right {
+                        .info .summary {
+                            &, strong {
+                                color: $font-color !important;
+                            }
+                        }
+
+                        .text-content {
+                            background-color: $surface-lighten1 !important;
+                            border-color: $border-color !important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .sidebar .notification-context {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+
+        .arrow {
+            &, .arrow-border {
+                border-right-color: $border-color !important;
+            }
+        }
+    }
+}
+
+// Settings pages
+.settings-box-container .settings-box.help {
+    background-color: $surface-lighten3 !important;
+    border-color: $border-color !important;
+}
+
+.account-settings .settings-box div.mail .status-verified {
+    color: #171717 !important;
 }

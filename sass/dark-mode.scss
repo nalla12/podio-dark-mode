@@ -501,3 +501,24 @@ html, body {
         border-bottom-color: $surface-lighten2 !important;
     }
 }
+
+// Space switcher sidebar
+.space-switcher {
+    .space-switcher-sidebar {
+        &, .left-nav {
+            background-color: $surface-lighten3 !important;
+            border-color: $border-color !important;
+            color: $font-color !important;
+
+            .org-navigation > li {
+                border-bottom-color: $border-color !important;
+                border-top-color: $border-color !important;
+            }
+
+            .org-navigation ul.org-spaces li.regular-space.current > a {
+                background-color: $surface-lighten2 !important;
+                border-top-color: $border-color !important;
+            }
+        }
+    }
+}

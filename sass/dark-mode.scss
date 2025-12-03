@@ -74,6 +74,32 @@ a:active, a:link, a:visited {
     }
 }
 
+// Common UI elements
+ul.token-input-list {
+    background: $surface-lighten1 !important;
+}
+
+// File uploader dialog
+.file-finder .content {
+    &, .file-finder-content > .navigation ul.tabs li.selected,
+    &, .file-finder-content .inner,
+    &, .account-tip,
+    &, .podio-uploader-box.multi-file {
+        background: $surface-lighten2 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+
+    .file-finder-content > .navigation,
+    .file-finder-content > .navigation ul.tabs li,
+    .providers-matrix .providers li:hover,
+    .footer {
+        background: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+}
+
 // Page Content
 html, body {
     background-color: $surface-base !important;
@@ -155,6 +181,10 @@ html, body {
 
         ul.content li .inner {
             border-color: $border-color !important;
+
+            .variable-right {
+                background: transparent !important;
+            }
         }
     }
 
@@ -173,6 +203,12 @@ html, body {
         .footer {
             background-color: $surface-lighten1 !important;
             border-bottom-color: $surface-lighten1 !important;
+        }
+    }
+
+    .gridster-widget.overflowing {
+        .footer .overflow {
+            background: $border-color !important;
         }
     }
 
@@ -323,62 +359,77 @@ html, body {
     background-color: $surface-base !important;
 }
 
-.item-topbar {
-    background-color: $surface-lighten1 !important;
-    border-color: $border-color !important;
-    color: $font-color !important;
-
-    .breadcrumb:after {
-        background: transparent !important;
-    }
-}
-
-section.item-content {
-    ul:not(.help-text-trigger) > li,
-    ul.help-text-trigger > li:not(.selected):not(:hover),
-    .field-label,
-    .placeholder-row {
+.items-section .body {
+    .item-topbar {
         background-color: $surface-lighten1 !important;
         border-color: $border-color !important;
         color: $font-color !important;
-    }
 
-    ul > li > .frame-wrapper > .frame-label,
-    .placeholder-row > .field-label,
-    .metadata-row {
-        background-color: $surface-lighten2 !important;
-        border-color: $border-color !important;
-        color: $font-color !important;
-    }
-
-    ul > li:not(.category-field):not(.calculation-field):not(.image-field):not(.separator-field).can-update {
-        .frame-content {
-            .value.view-mode:hover {
-                &, .contact-card.user:hover {
-                    background-color: $surface-lighten2 !important;
-                }
-            }
-
-            .value.no-hover-effect:hover {
-                background-color: inherit !important;
-                cursor: default !important;
-            }
+        .breadcrumb:after {
+            background: transparent !important;
         }
     }
 
-    .relationship-badge-component {
-        background-color: $surface-lighten1 !important;
-        border-color: $border-color !important;
-        color: $font-color !important;
-
-        .relationship-badge-component__title,
-        .relationship-badge-component__footer {
+    section.item-content {
+        ul:not(.help-text-trigger) > li,
+        ul.help-text-trigger > li:not(.selected):not(:hover),
+        .field-label,
+        .placeholder-row {
             background-color: $surface-lighten1 !important;
             border-color: $border-color !important;
             color: $font-color !important;
         }
+
+        ul > li > .frame-wrapper > .frame-label,
+        ul > li.has-error > .frame-wrapper > .frame-content,
+        .placeholder-row > .field-label,
+        .metadata-row {
+            background-color: $surface-lighten2 !important;
+            border-color: $border-color !important;
+            color: $font-color !important;
+        }
+
+        ul > li:not(.category-field):not(.calculation-field):not(.image-field):not(.separator-field).can-update {
+            .frame-content {
+                .value.view-mode:hover {
+                    &, .contact-card.user:hover {
+                        background-color: $surface-lighten2 !important;
+                    }
+                }
+
+                .value.no-hover-effect:hover {
+                    background-color: inherit !important;
+                    cursor: default !important;
+                }
+            }
+        }
+
+        .value.edit-mode > input {
+            color: $font-color !important;
+        }
+
+        .relationship-badge-component {
+            background-color: $surface-lighten1 !important;
+            border-color: $border-color !important;
+            color: $font-color !important;
+
+            .relationship-badge-component__title,
+            .relationship-badge-component__footer {
+                background-color: $surface-lighten1 !important;
+                border-color: $border-color !important;
+                color: $font-color !important;
+            }
+        }
+    }
+
+    // Item create overlay footer
+    .item-create-footer--content {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        opacity: 0.7 !important;
     }
 }
+
 
 // Activity and comments right sidebar
 .items-section .item-activity {

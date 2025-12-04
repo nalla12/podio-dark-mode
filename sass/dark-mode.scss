@@ -339,6 +339,8 @@ html, body {
 // App View
 .app-view {
     .app-view__sidebar {
+        background-color: $surface-lighten1 !important;
+
         > .app-sidebar-new {
             background-color: $surface-lighten1 !important;
             border-color: $border-color !important;
@@ -365,8 +367,17 @@ html, body {
         border-color: $border-color !important;
         color: $font-color !important;
 
+        .reporting-composer-wrapper {
+            border-color: $border-color !important;
+        }
+
         main.items-list {
             background-color: $surface-lighten1 !important;
+
+            .items-table .navigation-bar {
+                background-color: $surface-lighten1 !important;
+                border-color: $border-color !important;
+            }
 
             .items-table table {
                 background-color: $surface-lighten1 !important;
@@ -378,13 +389,24 @@ html, body {
                     border-color: $border-color !important;
                 }
 
+                tr > td {
+                    border-color: $border-color !important;
+                }
+
                 tr.odd > td {
                     background-color: $surface-lighten2 !important;
                 }
 
                 tr.even > td {
-                     background-color: $surface-lighten1 !important;
+                    background-color: $surface-lighten1 !important;
                  }
+            }
+        }
+
+        footer {
+            &, a {
+                background-color: $surface-lighten2 !important;
+                border-color: $border-color !important;
             }
         }
 

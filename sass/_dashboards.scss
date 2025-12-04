@@ -1,0 +1,119 @@
+@use 'colors';
+
+// Dashboard Main
+.main-content {
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+
+    #home_stream, #space_stream, #stream,
+    .promotion-banner .wrapper .text,
+    .grid-tile {
+        background-color: colors.$surface-lighten1 !important;
+    }
+
+    #stream_composer,
+    #stream .object {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+    }
+
+    #stream .show-more {
+        background-color: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color-darken !important;
+    }
+
+    .gridster-block {
+        background-color: colors.$surface-lighten1 !important;
+
+        ul.content li .inner {
+            border-color: colors.$border-color !important;
+
+            .variable-right {
+                background: transparent !important;
+            }
+        }
+    }
+
+    .gridster-widget {
+        background-color: colors.$surface-lighten1 !important;
+
+        .header .actions {
+            background-image: none !important;
+        }
+
+        .header h5,
+        .no-footer {
+            background-color: colors.$surface-lighten1 !important;
+        }
+
+        .footer {
+            background-color: colors.$surface-lighten1 !important;
+            border-bottom-color: colors.$surface-lighten1 !important;
+        }
+    }
+
+    .gridster-widget.overflowing {
+        .footer .overflow {
+            background: colors.$border-color !important;
+        }
+    }
+
+    // Add widget button
+    .addWidget-wrapper .addWidget {
+        // The button border
+        background-color: colors.$surface-lighten1 !important;
+
+        &:hover {
+            background-color: colors.$surface-lighten2 !important;
+        }
+
+        .add-widget-wrapper {
+            background-color: colors.$surface-base !important;
+
+            .centered {
+                color: colors.$font-color !important;
+            }
+        }
+    }
+
+    // Text fields
+    #stream_composer form textarea {
+        color: colors.$font-color !important;
+    }
+
+    .comment-box {
+        background-color: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+
+        textarea, .add-comment, .mentions-input-box {
+            background-color: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+        }
+
+        .add-comment:hover {
+            border-color: colors.$border-color-lighten !important;
+        }
+    }
+
+    .comment-box.realtime-layout {
+        .comment, .show-all-comments {
+            border-color: colors.$border-color !important;
+        }
+    }
+
+    // Buttons & Inputs
+
+    // Icons
+    .sprite-icon {
+        filter: brightness(150%) !important;
+    }
+
+    // Other
+    #home_stream .stream-unread-badge,
+    #space_stream .stream-unread-badge {
+        background-color: colors.$surface-lighten3 !important;
+        border-color: colors.$border-color-lighten !important;
+    }
+}

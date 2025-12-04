@@ -1,0 +1,218 @@
+@use 'colors';
+
+html, body {
+    background-color: colors.$surface-base !important;
+    color: colors.$font-color;
+}
+
+// Header
+#header-global {
+    .PodioUI__Notifications {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+
+        .PodioUI__Notifications__list {
+            a.PodioUI__Notifications__NotificationGroup:hover {
+                background-color: colors.$surface-lighten3 !important;
+            }
+        }
+
+        div {
+            color: colors.$font-color !important;
+        }
+
+        > div:last-child {
+            background-color: colors.$surface-lighten3 !important;
+        }
+    }
+}
+
+// Subnav
+.secondary-header.subnav {
+    #space-navigation {
+        border-bottom: none !important;
+
+        ul.app-nav {
+            li {
+                .title {
+                    color: colors.$surface-lighten5 !important;
+                }
+            }
+
+            li.active, li:hover {
+                .icon {
+                    filter: invert(1) brightness(75%) grayscale(1);
+                }
+
+                .title {
+                    color: colors.$font-color !important;
+                }
+            }
+        }
+    }
+}
+
+// Space switcher sidebar
+.space-switcher {
+    .space-switcher-sidebar {
+        &, .left-nav {
+            background-color: colors.$surface-lighten3 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+
+            .org-navigation > li {
+                border-bottom-color: colors.$border-color !important;
+                border-top-color: colors.$border-color !important;
+            }
+
+            .org-navigation ul.org-spaces li.regular-space.current > a {
+                background-color: colors.$surface-lighten2 !important;
+                border-top-color: colors.$border-color !important;
+            }
+        }
+    }
+}
+
+// Notifications Page
+body.notifications {
+    .notification-content {
+        .list {
+            .top {
+                background: colors.$surface-lighten2 !important;
+                border-color: colors.$border-color !important;
+            }
+            .blank-slate {
+                border-color: colors.$border-color !important;
+            }
+
+            ul.list > li.group {
+                border-color: colors.$border-color !important;
+
+                li.notification .inner .right {
+                    .info .summary {
+                        &, strong {
+                            color: colors.$font-color !important;
+                        }
+                    }
+                }
+
+                &:hover,
+                &.expanded {
+                    background-color: colors.$surface-lighten2 !important;
+                    border-color: colors.$border-color !important;
+
+                    li.notification.bundled {
+                        border-color: colors.$border-color !important;
+                    }
+
+                    li.notification .inner .right {
+                        .info .summary {
+                            &, strong {
+                                color: colors.$font-color !important;
+                            }
+                        }
+
+                        .text-content {
+                            background-color: colors.$surface-lighten1 !important;
+                            border-color: colors.$border-color !important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .sidebar .notification-context {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+
+        .arrow {
+            &, .arrow-border {
+                border-right-color: colors.$border-color !important;
+            }
+        }
+    }
+}
+
+// Settings pages
+.settings-box-container .settings-box.help {
+    background-color: colors.$surface-lighten3 !important;
+    border-color: colors.$border-color !important;
+}
+
+.account-settings .settings-box div.mail .status-verified {
+    color: #171717 !important;
+}
+
+// Chat pane
+.right-nav.chat-pane {
+    &, input {
+        background: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color !important;
+    }
+
+    .chat-main-wrapper {
+        header.chat-details {
+            border-bottom-color: colors.$border-color !important;
+        }
+
+        #chat-people-container {
+            .people-list {
+                background: colors.$surface-lighten2 !important;
+                border-color: colors.$border-color !important;
+
+                li > .inner-item {
+                    border-bottom-color: colors.$border-color !important;
+                }
+            }
+
+            .new-conversation > .inner-item {
+                border-bottom-color: colors.$border-color !important;
+            }
+
+            .people-list li:hover,
+            .new-conversation:hover {
+                background: colors.$surface-lighten3 !important;
+            }
+        }
+
+        .column.navigation {
+            background: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+        }
+
+        .show-conversation-container {
+            &, .events-container {
+                background: colors.$surface-lighten2 !important;
+                border-color: colors.$border-color !important;
+            }
+
+            .events-container ul.events > li > div {
+                border-left: 5px solid transparent;
+
+                &.divider {
+                    border-top-color: colors.$border-color !important;
+
+                    .divider-text {
+                        background: colors.$surface-lighten2 !important;
+                    }
+                }
+            }
+
+            .details .subject {
+                border-bottom-color: colors.$border-color !important;
+            }
+
+            .composer-new .mentions-input-box {
+                background: colors.$surface-lighten2 !important;
+
+                textarea {
+                    border-color: colors.$border-color !important;
+                    color: colors.$font-color !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@use 'colors';
+
+// Common UI elements
+ul.token-input-list {
+    background: colors.$surface-lighten1 !important;
+}
+
+// Buttons
+.button-new.primary {
+    color: colors.$font-color !important;
+}
+
+// Forms
+form label {
+    &, em,
+    &, strong {
+        color: colors.$font-color !important;
+    }
+}
+
+// Tables
+.table {
+    background-color: colors.$surface-lighten1 !important;
+    border-color: colors.$surface-lighten3 !important;
+}
+
+.items-table {
+    table tr.odd > td {
+        background-color: colors.$surface-lighten4 !important;
+
+    }
+
+    table tr.even > td {
+        background-color: colors.$surface-lighten3 !important;
+    }
+
+    .navigation-arrow.left, .navigation-arrow.right {
+        background: colors.$surface-lighten1 !important;
+    }
+}
+
+// Dialogs & overlays
+.side-tab-box .navigation ul > li {
+    background: colors.$surface-lighten1 !important;
+
+    &.selected {
+        background: colors.$surface-lighten2 !important;
+    }
+}
+
+.simple-balloon {
+    background-color: colors.$surface-lighten2 !important;
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+
+    li:hover {
+        background-color: colors.$surface-lighten3 !important;
+    }
+
+    &.small-arrow::after {
+        border-bottom-color: colors.$surface-lighten2 !important;
+    }
+
+    .navigation {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+}
+
+// File uploader dialog
+.file-finder .content {
+    &, .file-finder-content > .navigation ul.tabs li.selected,
+    &, .file-finder-content .inner,
+    &, .account-tip,
+    &, .podio-uploader-box.multi-file {
+        background: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+
+    .file-finder-content > .navigation,
+    .file-finder-content > .navigation ul.tabs li,
+    .providers-matrix .providers li:hover,
+    .footer {
+        background: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+}
+
+.form-embed-actions .action-box {
+    &, input {
+        background-color: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+
+    .podio-uploader-box .button-wrapper {
+        background-color: colors.$surface-lighten2 !important;
+        border-color: colors.$surface-lighten3 !important;
+        color: colors.$font-color !important;
+
+        .button-new.secondary {
+            background-color: colors.$surface-lighten3 !important;
+        }
+
+        .files-drag-tip {
+            background-color: colors.$surface-lighten2 !important;
+        }
+    }
+
+    .arrow-border {
+        border-top-color: colors.$border-color !important;
+    }
+}

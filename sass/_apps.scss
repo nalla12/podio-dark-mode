@@ -1,0 +1,195 @@
+@use 'colors';
+
+.app-view {
+    .app-view__sidebar {
+        background-color: colors.$surface-lighten1 !important;
+
+        > .app-sidebar-new {
+            background-color: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+
+            .app-sidebar-new__current-views {
+                color: colors.$font-color !important;
+            }
+        }
+
+        .app-view-component.is-selected {
+            > a {
+                .body, .img-ext {
+                    background-color: colors.$surface-lighten3 !important;
+                    border-color: colors.$border-color !important;
+                    color: colors.$font-color !important;
+                }
+            }
+        }
+    }
+
+    .app-view__content {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+
+        .reporting-composer-wrapper {
+            border-color: colors.$border-color !important;
+        }
+
+        main.items-list {
+            background-color: colors.$surface-lighten1 !important;
+
+            .items-table .navigation-bar {
+                background-color: colors.$surface-lighten1 !important;
+                border-color: colors.$border-color !important;
+            }
+
+            .items-table table {
+                background-color: colors.$surface-lighten1 !important;
+                border-color: colors.$border-color !important;
+
+                thead tr th,
+                thead tr th.retina {
+                    background-color: colors.$surface-lighten1 !important;
+                    border-color: colors.$border-color !important;
+                }
+
+                tr > td {
+                    border-color: colors.$border-color !important;
+                }
+
+                tr.odd > td {
+                    background-color: colors.$surface-lighten2 !important;
+                }
+
+                tr.even > td {
+                    background-color: colors.$surface-lighten1 !important;
+                }
+            }
+        }
+
+        footer {
+            &, a {
+                background-color: colors.$surface-lighten2 !important;
+                border-color: colors.$border-color !important;
+            }
+        }
+
+        .toggle-items-link {
+            background-color: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+            border-right-color: colors.$surface-lighten1 !important;
+            color: colors.$font-color !important;
+        }
+    }
+}
+
+// App item
+.content-overlay.background {
+    background-color: colors.$surface-base !important;
+}
+
+.items-section .body {
+    .item-topbar {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+
+        .breadcrumb:after {
+            background: transparent !important;
+        }
+    }
+
+    section.item-content {
+        ul:not(.help-text-trigger) > li,
+        ul.help-text-trigger > li:not(.selected):not(:hover),
+        .field-label,
+        .placeholder-row {
+            background-color: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+        }
+
+        ul > li > .frame-wrapper > .frame-label,
+        ul > li.has-error > .frame-wrapper > .frame-content,
+        .placeholder-row > .field-label,
+        .metadata-row {
+            background-color: colors.$surface-lighten2 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+        }
+
+        ul > li:not(.category-field):not(.calculation-field):not(.image-field):not(.separator-field).can-update {
+            .frame-content {
+                .value.view-mode:hover {
+                    &, .contact-card.user:hover {
+                        background-color: colors.$surface-lighten2 !important;
+                    }
+                }
+
+                .value.no-hover-effect:hover {
+                    background-color: inherit !important;
+                    cursor: default !important;
+                }
+            }
+        }
+
+        .value.edit-mode > input {
+            color: colors.$font-color !important;
+        }
+
+        .relationship-badge-component {
+            background-color: colors.$surface-lighten1 !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+
+            .relationship-badge-component__title,
+            .relationship-badge-component__footer {
+                background-color: colors.$surface-lighten1 !important;
+                border-color: colors.$border-color !important;
+                color: colors.$font-color !important;
+            }
+        }
+    }
+
+    // Item create overlay footer
+    .item-create-footer--content {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        opacity: 0.7 !important;
+    }
+}
+
+
+// Activity and comments right sidebar
+.items-section .item-activity {
+    &, .activity-header {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+
+    .composer-new {
+        background-color: colors.$surface-lighten2 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+
+        textarea {
+            background-color: colors.$surface-base !important;
+            border-color: colors.$border-color !important;
+            color: colors.$font-color !important;
+        }
+    }
+
+    .activity-group-wrapper .pagination-nav {
+        background-color: colors.$surface-lighten2 !important ;
+        color: colors.$font-color !important;
+    }
+}
+
+.app-breakdown-component__item .app-breakdown-component__link:focus,
+.app-breakdown-component__item.is-selected:last-child>.app-breakdown-component__link,
+.app-breakdown-component__item.is-selected>.app-breakdown-component__link,
+.unsaved-app-view-bar-component {
+    background-color: colors.$surface-lighten1 !important;
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+}

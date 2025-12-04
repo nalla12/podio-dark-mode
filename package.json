@@ -1,19 +1,19 @@
 {
-  "name": "podio-dark-mode",
-  "version": "1.0.0",
-  "description": "A dark mode Chrome extension for Podio.com",
-  "main": "index.html",
-  "scripts": {
-    "build:watch": "sass sass/:styles/ --style=compressed --no-source-map --watch",
-    "build": "sass sass/:styles/ --style=compressed --no-source-map"
-  },
-  "repository": {
-    "type": "git",
-    "url": "-"
-  },
-  "author": "Allan Duong",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "1.90.0"
-  }
+    "name": "podio-dark-mode",
+    "version": "1.0.0",
+    "description": "A dark mode Chrome extension for Podio.com",
+    "main": "index.html",
+    "scripts": {
+        "build:watch": "sass sass/:styles/ --style=compressed --no-source-map --watch",
+        "build": "sass sass/:styles/ --style=compressed --no-source-map"
+    },
+    "repository": {
+        "type": "git",
+        "url": "-"
+    },
+    "author": "Allan Duong",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "1.90.0"
+    }
 }

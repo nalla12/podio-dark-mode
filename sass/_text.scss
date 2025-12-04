@@ -1,0 +1,56 @@
+@use 'colors';
+
+// Text and fonts
+h1, h2, h3, h4, h5, p {
+    color: colors.$font-color !important;
+}
+
+a:active, a:link, a:visited {
+    color: colors.$link-color !important;
+}
+
+#stream .object .body .reference .bd {
+    .by,  .created-by,  .created-on,  .ref-type a,  .via {
+        color: colors.$font-color !important;
+    }
+
+    .space {
+        color: colors.$link-color-secondary !important;
+    }
+}
+
+#stream .object .body ul.activities li a {
+    color: colors.$font-color !important;
+}
+
+.header-title {
+    color: colors.$font-color !important;
+
+    >a:active,
+    >a:link,
+    >a:visited {
+        color: colors.$font-color !important;
+    }
+}
+
+.header-sub-title {
+    color: colors.$font-color !important;
+
+    >a:active,
+    >a:link,
+    >a:visited, {
+        color: colors.$font-color !important;
+    }
+}
+
+.sub-navigation .tabs ul {
+    li h5 {
+        color: colors.$font-color !important;
+
+        >a:active,
+        >a:link,
+        >a:visited {
+            color: colors.$font-color !important;
+        }
+    }
+}

@@ -91,6 +91,35 @@ form label {
     }
 }
 
+// Dialogs & overlays
+.side-tab-box .navigation ul > li {
+    background: $surface-lighten1 !important;
+
+    &.selected {
+        background: $surface-lighten2 !important;
+    }
+}
+
+.simple-balloon {
+    background-color: $surface-lighten2 !important;
+    border-color: $border-color !important;
+    color: $font-color !important;
+
+    li:hover {
+        background-color: $surface-lighten3 !important;
+    }
+
+    &.small-arrow::after {
+        border-bottom-color: $surface-lighten2 !important;
+    }
+
+    .navigation {
+        background-color: $surface-lighten1 !important;
+        border-color: $border-color !important;
+        color: $font-color !important;
+    }
+}
+
 // File uploader dialog
 .file-finder .content {
     &, .file-finder-content > .navigation ul.tabs li.selected,
@@ -529,20 +558,6 @@ html, body {
     background-color: $surface-lighten1 !important;
     border-color: $border-color !important;
     color: $font-color !important;
-}
-
-.simple-balloon {
-    background-color: $surface-lighten2 !important;
-    border-color: $border-color !important;
-    color: $font-color !important;
-
-    li:hover {
-        background-color: $surface-lighten3 !important;
-    }
-
-    &.small-arrow::after {
-        border-bottom-color: $surface-lighten2 !important;
-    }
 }
 
 // Space switcher sidebar

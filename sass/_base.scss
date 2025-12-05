@@ -57,18 +57,37 @@ html, body {
 .space-switcher {
     .space-switcher-sidebar {
         &, .left-nav {
-            background-color: colors.$surface-lighten3 !important;
+            background: colors.$surface-lighten2 !important;
             border-color: colors.$border-color !important;
             color: colors.$font-color !important;
 
             .org-navigation > li {
                 border-bottom-color: colors.$border-color !important;
                 border-top-color: colors.$border-color !important;
+                color: colors.$font-color !important;
+
+                &:hover {
+                    background: colors.$surface-lighten3 !important;
+                }
+
+                &.expanded:hover {
+                    background: transparent !important;
+                }
+
+                .header {
+                    color: colors.$font-color !important;
+                }
             }
 
-            .org-navigation ul.org-spaces li.regular-space.current > a {
-                background-color: colors.$surface-lighten2 !important;
-                border-top-color: colors.$border-color !important;
+            .org-navigation ul.org-spaces {
+                li.regular-space.current > a {
+                    background: colors.$surface-lighten3 !important;
+                    border-top-color: colors.$border-color !important;
+                }
+
+                li.employee-network:hover {
+                    background: colors.$surface-lighten3 !important;;
+                }
             }
         }
     }

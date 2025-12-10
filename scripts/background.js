@@ -1,3 +1,4 @@
+
 let darkModeEnabled = false;
 
 function updateToolbarIcon(isDark) {
@@ -41,9 +42,10 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
         console.log('Storage result:', result);
 
         if (isDark) {
-            await toggleDarkMode(darkModeEnabled, tab.id);
+            await toggleDarkMode(isDark, tabId);
         }
 
         updateToolbarIcon(isDark);
+        darkModeEnabled = isDark;
     }
 });

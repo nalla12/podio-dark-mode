@@ -81,28 +81,6 @@
         color: colors.$font-color !important;
     }
 
-    .comment-box {
-        background-color: colors.$surface-lighten2 !important;
-        border-color: colors.$border-color !important;
-        color: colors.$font-color !important;
-
-        textarea, .add-comment, .mentions-input-box {
-            background-color: colors.$surface-lighten1 !important;
-            border-color: colors.$border-color !important;
-            color: colors.$font-color !important;
-        }
-
-        .add-comment:hover {
-            border-color: colors.$border-color-lighten !important;
-        }
-    }
-
-    .comment-box.realtime-layout {
-        .comment, .show-all-comments {
-            border-color: colors.$border-color !important;
-        }
-    }
-
     // Buttons & Inputs
 
     // Icons

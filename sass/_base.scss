@@ -292,3 +292,44 @@ input[type=email].disabled,input[type=number].disabled,input[type=password].disa
     color: #171717;
     border: 1px solid #e9e9e9
 }
+
+// Dialogs, overlays, modals
+.modal-component .modal-dialog {
+    background: colors.$surface-lighten2 !important;
+
+    .modal-content .box {
+        background: colors.$surface-lighten2 !important;
+
+        p, span {
+            color: colors.$font-color !important;
+        }
+    }
+}
+
+// Misc
+.even {
+    background-color: colors.$surface-lighten2 !important;
+}
+
+.input-text-composer {
+    background: colors.$surface-lighten2 !important;
+    border-color: colors.$border-color !important;
+}
+
+.podio-global-help-dropdown {
+    background: colors.$surface-lighten2 !important;
+    border-color: colors.$border-color !important;
+
+    &:after, &:before {
+        border-bottom-color: colors.$border-color !important;
+    }
+
+    .section {
+        border-top-color: colors.$border-color !important;
+    }
+
+    .section.ue-contact {
+        background-color: colors.$surface-lighten2 !important;
+    }
+}
+

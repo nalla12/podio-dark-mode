@@ -5,18 +5,88 @@ ul.token-input-list {
     background: colors.$surface-lighten1 !important;
 }
 
+.category-field-value-component:after {
+    background: none !important;
+}
+
 // Buttons
-.button-new.primary {
+a.action-dropdown, a.action-dropdown-stream-header {
+    background-color: colors.$surface-lighten3 !important;
+    border-color: colors.$border-color !important;
     color: colors.$font-color !important;
 }
 
-// Forms
+.action-dropdown-stream-header-wrapper, .action-dropdown-wrapper {
+    background-color: colors.$surface-lighten3 !important;
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+}
+
+// Forms, textareas, comment boxes
 form label {
     &, em,
     &, strong {
         color: colors.$font-color !important;
     }
 }
+
+input {
+    background-color: colors.$surface-lighten2 !important;
+    color: colors.$font-color !important;
+}
+
+.comment-box {
+    background-color: colors.$surface-lighten2 !important;
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+
+    textarea, .add-comment, .mentions-input-box {
+        background-color: colors.$surface-lighten1 !important;
+        border-color: colors.$border-color !important;
+        color: colors.$font-color !important;
+    }
+
+    .add-comment:hover {
+        border-color: colors.$border-color-lighten !important;
+    }
+
+    .question-item .bd .box {
+        background: colors.$surface-lighten2 !important;
+    }
+}
+
+.comment-box.realtime-layout {
+    .comment, .show-all-comments {
+        border-color: colors.$border-color !important;
+    }
+}
+
+.summary-badge-list {
+    .summary-badge {
+        border-color: colors.$border-color !important;
+
+        &.expanded {
+            background-color: colors.$surface-lighten4 !important;
+        }
+
+        &.expanded > div.details {
+            background-color: colors.$surface-lighten3 !important;
+
+            .contact-field>strong {
+                color: colors.$font-color !important;
+            }
+        }
+
+        .email, .phone {
+            color: colors.$font-color !important;
+        }
+    }
+
+    .summary-badge.summary-badge-grey a.action-dropdown {
+        background: colors.$surface-lighten2 !important;
+    }
+}
+
 
 // Tables
 .table {
@@ -39,7 +109,7 @@ form label {
     }
 }
 
-// Dialogs & overlays
+// Dialogs, overlays, modals
 .side-tab-box .navigation ul > li {
     background: colors.$surface-lighten1 !important;
 
@@ -65,6 +135,20 @@ form label {
         background-color: colors.$surface-lighten1 !important;
         border-color: colors.$border-color !important;
         color: colors.$font-color !important;
+    }
+}
+
+.podio-autocompleter ul {
+    background: colors.$surface-lighten1 !important;
+    border-color: colors.$border-color !important;
+
+    > li, > li.empty, > li.group, > li.loading {
+        background: colors.$surface-lighten2 !important;
+        border-bottom-color: colors.$border-color !important;
+
+        &.item:hover {
+            background: colors.$surface-lighten4 !important;
+        }
     }
 }
 

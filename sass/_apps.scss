@@ -132,6 +132,10 @@
             }
         }
 
+        ul > li.progress-field .progress-wrapper .ui-slider {
+            background: colors.$surface-lighten4 !important;
+        }
+
         .value.edit-mode > input {
             color: colors.$font-color !important;
         }
@@ -179,9 +183,15 @@
         }
     }
 
-    .activity-group-wrapper .pagination-nav {
-        background-color: colors.$surface-lighten2 !important ;
-        color: colors.$font-color !important;
+    .activity-group-wrapper {
+        .pagination-nav {
+            background-color: colors.$surface-lighten2 !important ;
+            color: colors.$font-color !important;
+        }
+
+        .activity-group .activities > .update .edits:hover {
+            color: colors.$font-color !important;
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 @use 'colors';
 
 html, body {
-    background-color: colors.$surface-base !important;
+    background: colors.$surface-base !important;
     color: colors.$font-color;
 }
 
@@ -234,4 +234,61 @@ body.notifications {
             }
         }
     }
+}
+
+// Buttons
+.button-new.primary {
+    color: colors.$font-color !important;
+}
+
+.button-large.silver,
+.app-info-box .modify-app,
+a.icon-button,
+.attach-file-button {
+    background: colors.$surface-base !important;
+    border-color: colors.$border-color !important;
+    color: colors.$font-color !important;
+    text-shadow: none !important;
+}
+
+.btn:hover {
+    background-color: colors.$surface-base !important;
+}
+
+.button-large.green.loader,.button.loader,.button.loader:hover,.flatbutton.loader,.flatbutton.loader:hover,.util-button-new.loader,.util-button-new.loader:hover,
+input[type=email].disabled,input[type=number].disabled,input[type=password].disabled,input[type=search].disabled,input[type=tel].disabled,input[type=text].disabled,input[type=url].disabled {
+    background-color: colors.$surface-base !important;
+    border-color: colors.$border-color !important;
+}
+
+.button-new.secondary,
+.button-new.secondary.disabled,.button-new.secondary.disabled:focus,.button-new.secondary.disabled:hover,.button-new.secondary:disabled,.button-new.secondary:disabled:focus,.button-new.secondary:disabled:hover,
+.button-new.secondary.loader,.button-new.secondary.loader:focus,.button-new.secondary.loader:hover,
+.button-new.secondary.focus,.button-new.secondary:focus {
+    background-color: colors.$surface-lighten1 !important;
+}
+
+// Balloons
+.balloon.white .balloon-inner,
+.hotkey-button {
+    background-color: colors.$surface-lighten1 !important;
+    border-color: colors.$border-color;
+}
+
+.balloon.white.below>.arrow,
+.balloon.white.below .arrow-border,
+.balloon.white.above>.arrow,
+.balloon.white.above .arrow-border,
+.balloon.white.left>.arrow,
+.balloon.white.left .arrow-border,
+.balloon.white.right>.arrow,
+.balloon.white.right .arrow-border {
+    border-color: colors.$border-color;
+}
+
+// Tipsy
+.tipsy.light .tipsy-inner {
+    background-color: #fff;
+    color: #171717;
+    border: 1px solid #e9e9e9
 }
